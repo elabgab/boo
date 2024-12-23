@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    min-width: 100vh;
+    background-color: #e97e7e;
+
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 500px;
+    margin-bottom: 3rem;
+
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+            animation: typewriter 4s steps(7) 1s infinite normal both,
+             blinkTextCursor 500ms steps(7) infinite normal;
+}
+@keyframes typewriter{
+  10%{width: 0;}
+  50%{width: 10em;}
+  75%{width: 24em;}
+  100%{width: 0;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.memories-section .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 2rem;
+
+}
+
+.memories-section .box-container .box{
+    text-align: center;
+    background-color: #ffff;
+    box-shadow: black;
+    float: right;
+    display: flex;
+
+}
+img.eps1{
+    height: 520px;
+}
+img.eps2{
+    height: 520px;
+}
+img.eps3{
+    height: 520px;
+}
